@@ -11,7 +11,7 @@ function escribirFrase() {
   if (indiceLetra < frases[indiceFrase].length) {
     mensajeDiv.textContent += frases[indiceFrase].charAt(indiceLetra);
     indiceLetra++;
-    setTimeout(escribirFrase, 80); // velocidad de escritura
+    setTimeout(escribirFrase, 85); // velocidad de escritura
   } else {
     // Esperar un poco y pasar a la siguiente frase
     setTimeout(() => {
@@ -56,3 +56,4 @@ function crearCorazon() {
   setTimeout(() => corazon.remove(), 5000);
 }
 setInterval(crearCorazon, 800);
+
