@@ -1,0 +1,42 @@
+body {
+  background: linear-gradient(to bottom, #ffe6f0, #fff);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  color: #d63384;
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+#corona {
+  font-size: 100px;
+  margin-top: 30px;
+  animation: brillar 2s infinite alternate;
+}
+
+@keyframes brillar {
+  from { text-shadow: 0 0 5px gold; }
+  to { text-shadow: 0 0 20px gold, 0 0 40px orange; }
+}
+
+#final {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.heart {
+  position: fixed;
+  bottom: 0;
+  font-size: 24px;
+  animation: flotar 5s linear forwards;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-600px) scale(1.5); opacity: 0; }
+}
